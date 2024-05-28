@@ -10,7 +10,7 @@
 .topnav_wrap{height: 100%;}
 .topnav{display: flex; align-items: center; height: 100%;}
 .topnav .topnav_item{padding: 20px;}
-.topnav .topnav_item a{font-size: 18px;}
+.topnav .topnav_item a{font-size: 1rem;}
 
 .common_footer{background-color: #000; text-align: center; padding: 40px 0 80px;}
 .common_footer p{font-family: 'Pretendard-Medium'; font-size: 18px; line-height: 28px; color: #393939; background-color: #000; }
