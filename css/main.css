@@ -33,7 +33,7 @@
 #main_about .about_r .about_tlt{margin-bottom: 30px;}
 #main_about .about_r .about_con ul li{display: flex; margin-bottom: 15px;}
 #main_about .about_r .about_con ul li:last-child{margin-bottom: 0;}
-#main_about .about_r .about_con .ac_left{margin-right: 10px;}
+#main_about .about_r .about_con .ac_left{margin-right: 10px; font-family: 'Pretendard-Medium'; }
 #main_about .about_r .about_con .skill_bar{border: 1px solid #ccc; width: 50%;}
 #main_about .about_r .about_con ul li:nth-child(1) .skill_fill{background-color: #539c75; width: 90%; height: 100%;}
 #main_about .about_r .about_con ul li:nth-child(2) .skill_fill{background-color: #539c75; width: 60%; height: 100%;}
@@ -184,7 +184,6 @@
     #main_about .about_l{width: 100%;}
     #main_about .about_r{margin-top: 50px;}
     #main_about .about_r .about_con{margin-bottom: 50px;}
-    #main_about .about_r .about_con .ac_left{font-family: 'Pretendard-Medium'; }
     #main_about .about_r .about_con .ac_right{word-break: keep-all; }
 
     #main_portfolio .portfolio_bg .c1{display: none;}
