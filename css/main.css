@@ -19,7 +19,7 @@
 .main_txt .big02{display: block; color: #ccc; font-size: 220px; letter-spacing: -15px; line-height: 0; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
 .main_txt .small{margin-top:120px; font-size: 18px; line-height: 150%; background-color: transparent;}
 
-.main_tlt{font-family: 'Pretendard-Regular'; font-size: 40px; display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
+.main_tlt{font-family: 'Pretendard-Regular'; font-size: 30px; display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
 .main_tlt::after{content: ''; display: inline-block; width: 31px; height: 31px; border-radius: 50%; background-color: #009245; position: absolute; top: -7px; right: -15px; z-index: -1;}
 
 .main_con_wrap{padding: 130px 0;}
