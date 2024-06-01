@@ -67,9 +67,9 @@
 
 #main_portfolio .pf_con{}
 #main_portfolio .pf_con .prev_img{position: relative;}
-#main_portfolio .pf_con .prev_img .pc{text-align: center; background-color: transparent; width: 620px; margin: 0 auto;}
+#main_portfolio .pf_con .prev_img .pc{text-align: center; background-color: transparent; width: 450px; margin: 0 auto;}
 #main_portfolio .pf_con .prev_img .pc img{width: 100%;}
-#main_portfolio .pf_con .prev_img .site_hover{width: 568px; height: 326px;  position: absolute; top: 20px; left: 50%; transform: translateX(-50%); transition: 10s linear;}
+#main_portfolio .pf_con .prev_img .site_hover{width: 413px; height: 230px;  position: absolute; top: 20px; left: 50%; transform: translateX(-50%); transition: 10s linear;}
 
 #main_portfolio .pf_con .prev_img .site_hover.w01{background: url(../img/daeji_hover.png) center top no-repeat; background-size: cover; }
 #main_portfolio .pf_con .prev_img .site_hover.w02{background: url(../img/wstextile_hover.png) center top no-repeat; background-size: cover;}
@@ -85,9 +85,9 @@
 
 #main_portfolio .pf_con .prev_img .site_hover:hover{background-position: center bottom;}
 #main_portfolio .pf_con .prev_bottom{text-align: center;}
-#main_portfolio .pf_con .prev_bottom .portf_sitename{font-family: 'Pretendard-Regular'; font-size: 24px; margin: 50px 0 30px; background: transparent;}
+#main_portfolio .pf_con .prev_bottom .portf_sitename{font-family: 'Pretendard-Regular'; font-size: 1.3rem; margin: 50px 0 40px; background: transparent;}
 #main_portfolio .pf_con .prev_bottom button{background-color: transparent; border: 1px solid #9b9b9b; width: 110px; height: 35px;}
-#main_portfolio .pf_con .prev_bottom button a{font-size: 18px; display: block; height: 100%; line-height: 35px;}
+#main_portfolio .pf_con .prev_bottom button a{font-size: 0.9rem; display: block; height: 100%; line-height: 35px;}
 #main_portfolio .pf_con .prev_bottom button.process{margin-right: 60px;}
 
 #main_portfolio .slick-prev{position: absolute; cursor: pointer; bottom: 10px; left: calc(50% - 230px); color: transparent; width: 22px; z-index: 1; color: transparent; background-color: transparent; border: none;}
