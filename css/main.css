@@ -15,8 +15,8 @@
 }
 
 .main_txt{text-align: center; background-color: transparent; position: absolute; z-index: 2;}
-.main_txt .big01{display: block; font-size: 220px; letter-spacing: -15px; line-height: 110%; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
-.main_txt .big02{display: block; color: #ccc; font-size: 220px; letter-spacing: -15px; line-height: 0; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
+.main_txt .big01{display: block; font-size: 200px; letter-spacing: -15px; line-height: 110%; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
+.main_txt .big02{display: block; color: #ccc; font-size: 200px; letter-spacing: -15px; line-height: 0; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
 .main_txt .small{margin-top:120px; font-size: 18px; line-height: 150%; background-color: transparent;}
 
 .main_tlt{font-family: 'Pretendard-Regular'; font-size: 30px; display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
