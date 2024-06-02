@@ -32,6 +32,7 @@
 #main_about .about_r .about_con{margin-bottom: 70px;}
 #main_about .about_r .about_tlt{margin-bottom: 30px;}
 #main_about .about_r .about_con ul li{display: flex; margin-bottom: 15px;}
+#main_about .about_r .about_con ul.skills .ac_left{width: 20%;}
 #main_about .about_r .about_con ul li:last-child{margin-bottom: 0;}
 #main_about .about_r .about_con .ac_left{margin-right: 20px; font-family: 'Pretendard-Medium'; }
 #main_about .about_r .about_con .skill_bar{border: 1px solid #ccc; width: 50%;}
