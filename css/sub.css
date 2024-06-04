@@ -22,8 +22,10 @@
 .work_info ul li{margin-bottom: 1.2rem; font-size: 1.1rem; display: flex;}
 .work_info ul li b{width: 10%;}
 
+
+.pf_button{margin: 120px auto; display: flex;}
 .pf_button .link:first-child{margin-right: 20px;}
-.pf_button .link{border: 1px solid #9b9b9b; width: 140px; height: 45px; margin: 120px auto;}
+.pf_button .link{border: 1px solid #9b9b9b; width: 140px; height: 45px; }
 .pf_button .link a{display: block; color: #143f36; width: 100%; height: 100%; font-size: 1rem; line-height: 45px; text-align: center; }
 
 
