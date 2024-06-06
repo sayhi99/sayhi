@@ -19,8 +19,8 @@
 .work_info h3::after{content: ''; display: inline-block; width: 31px; height: 31px; border-radius: 50%; background-color: #009245; position: absolute; top: -7px; right: -15px; z-index: -1;}
 
 .overview > p{font-size: 1.1rem; line-height: 2.5rem;}
-.overview .org_site p{font-size: 0.9rem; color: #999; line-height: 2rem; font-family: 'Pretendard-Thin';}
-.overview .org_site p > a{font-size: 0.9rem; color: #999; line-height: 2rem; font-family: 'Pretendard-Thin';}
+.overview .org_site p{font-size: 0.9rem; color: #999; line-height: 2rem;}
+.overview .org_site p > a{font-size: 0.9rem; color: #999; line-height: 2rem; }
 .work_info ul li{margin-bottom: 1.2rem; font-size: 1.1rem; display: flex;}
 .work_info ul li b{width: 15%;}
 
