@@ -78,12 +78,9 @@
 #main_portfolio .pf_con .prev_img .site_hover.w03{background: url(../img/yura_hover.png) center top no-repeat; background-size: cover;}
 #main_portfolio .pf_con .prev_img .site_hover.w04{background: url(../img/silvaco_hover.png) center top no-repeat; background-size: cover;}
 #main_portfolio .pf_con .prev_img .site_hover.w05{background: url(../img/remedif_hover.png) center top no-repeat; background-size: cover;}
-#main_portfolio .pf_con .prev_img .site_hover.w06{background: url(../img/template28_hover.png) center top no-repeat; background-size: cover;}
-#main_portfolio .pf_con .prev_img .site_hover.w07{background: url(../img/hansung02_hover.png) center top no-repeat; background-size: cover;}
-#main_portfolio .pf_con .prev_img .site_hover.w08{background: url(../img/template35_hover.png) center top no-repeat; background-size: cover;}
-#main_portfolio .pf_con .prev_img .site_hover.w09{background: url(../img/dreamphilos_hover.jpg) center top no-repeat; background-size: cover;}
-#main_portfolio .pf_con .prev_img .site_hover.w10{background: url(../img/PMG_hover.jpg) center top no-repeat; background-size: cover;}
-#main_portfolio .pf_con .prev_img .site_hover.w11{background: url(../img/mjtech_hover.jpg) center top no-repeat; background-size: cover;}
+#main_portfolio .pf_con .prev_img .site_hover.w06{background: url(../img/dreamphilos_hover.jpg) center top no-repeat; background-size: cover;}
+#main_portfolio .pf_con .prev_img .site_hover.w07{background: url(../img/PMG_hover.jpg) center top no-repeat; background-size: cover;}
+#main_portfolio .pf_con .prev_img .site_hover.w08{background: url(../img/mjtech_hover.jpg) center top no-repeat; background-size: cover;}
 
 #main_portfolio .pf_con .prev_img .site_hover:hover{background-position: center bottom;}
 #main_portfolio .pf_con .prev_bottom{text-align: center;}
