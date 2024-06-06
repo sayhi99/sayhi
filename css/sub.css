@@ -12,8 +12,8 @@
 .wp_img{width: 90%; margin: 120px auto 100px; position: relative;}
 /* .wp_img:after{content:''; display:block; width: 110%; height:200px; background-color: #ccc; margin: 0 auto; position: absolute; left: 50%; bottom: -30px; transform: translateX(-50%); z-index: -1;} */
 .wp_img img{width: 100%;   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
-.wp_img .org_site{}
-.wp_img .org_site a{}
+.wp_img .org_site{text-align: right;}
+.wp_img .org_site a{color: #666; font-size: 0.9rem;}
 
 .overview, .work_info{margin-bottom: 70px;;}
 .overview h3, .work_info h3{display:inline-block; font-size: 1.8rem; position: relative; margin-bottom: 2rem;}
