@@ -73,7 +73,7 @@
 #main_portfolio .pf_con .prev_img .pc img{width: 100%;}
 #main_portfolio .pf_con .prev_img .site_hover{width: 413px; height: 230px;  position: absolute; top: 20px; left: 50%; transform: translateX(-50%); transition: 10s linear;}
 
-#main_portfolio .pf_con .prev_img .site_hover.w01{background: url(../img/daeji_hover.png) center top no-repeat; background-size: cover; }
+#main_portfolio .pf_con .prev_img .site_hover.w01{background: url(../img/daeji_hover.jpg) center top no-repeat; background-size: cover; }
 #main_portfolio .pf_con .prev_img .site_hover.w02{background: url(../img/wstextile_hover.png) center top no-repeat; background-size: cover;}
 #main_portfolio .pf_con .prev_img .site_hover.w03{background: url(../img/yura_hover.png) center top no-repeat; background-size: cover;}
 #main_portfolio .pf_con .prev_img .site_hover.w04{background: url(../img/silvaco_hover.png) center top no-repeat; background-size: cover;}
