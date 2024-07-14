@@ -19,7 +19,7 @@
 .main_txt .big02{display: block; color: #ccc; font-size: 14vw; letter-spacing: -15px; line-height: 30px; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
 .main_txt .small{margin-top:8vw; font-size: 1vw; line-height: 150%; background-color: transparent;}
 
-.main_tlt{font-family: 'Pretendard-Regular'; font-size: 1.8rem; display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
+.main_tlt{font-family: 'Pretendard-Regular'; font-size: max(1.8rem, 1.5vw); display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
 .main_tlt::after{content: ''; display: inline-block; width: 31px; height: 31px; border-radius: 50%; background-color: #009245; position: absolute; top: -7px; right: -15px; z-index: -1;}
 
 .main_con_wrap{padding: 130px 0;}
@@ -49,9 +49,9 @@
 #main_portfolio .portfolio_conwrap div{background: transparent;}
 
 #main_portfolio .portfolio_bg .circle{display:block; border-radius: 50%; position: absolute;}
-#main_portfolio .portfolio_bg .c1{right: 50px; top: 10%; width: 450px; height: 450px; background-color: #004922; animation: c1 10s linear; animation-iteration-count: infinite;}
-#main_portfolio .portfolio_bg .c2{ top: -15%; left: 50%; width: 400px; height: 400px; background-color: #009245; opacity: 30%; animation: c2 7s ease-in; animation-iteration-count: infinite;}
-#main_portfolio .portfolio_bg .c3{background:url(../img/rotate_text.png) center center no-repeat; opacity: 70%; left: -300px; bottom: -20%; width: 500px; height: 500px; animation: rotate_c3 16s linear infinite; background-size: 90%;}
+#main_portfolio .portfolio_bg .c1{right: 50px; top: 10%; width: max(30vw,450px); height: max(30vw,450px); background-color: #004922; animation: c1 10s linear; animation-iteration-count: infinite;}
+#main_portfolio .portfolio_bg .c2{ top: -15%; left: 50%; width: max(28vw,400px); height: max(28vw,400px); background-color: #009245; opacity: 30%; animation: c2 7s ease-in; animation-iteration-count: infinite;}
+#main_portfolio .portfolio_bg .c3{background:url(../img/rotate_text.png) center center no-repeat; opacity: 70%; left: max(-300px,-15vw); bottom: -20%; width: max(33vw,500px); height: max(33vw,500px); animation: rotate_c3 16s linear infinite; background-size: 90%;}
 
 @keyframes c2 {
     0%,100%{transform: translateY(0)}   
@@ -69,9 +69,9 @@
 
 #main_portfolio .pf_con{}
 #main_portfolio .pf_con .prev_img{position: relative;}
-#main_portfolio .pf_con .prev_img .pc{text-align: center; background-color: transparent; width: 450px; margin: 0 auto;}
+#main_portfolio .pf_con .prev_img .pc{text-align: center; background-color: transparent; width: max(35vw, 450px); margin: 0 auto;}
 #main_portfolio .pf_con .prev_img .pc img{width: 100%;}
-#main_portfolio .pf_con .prev_img .site_hover{width: 413px; height: 232px;  position: absolute; top: 19px; left: 50%; transform: translateX(-50%); transition: 10s linear;}
+#main_portfolio .pf_con .prev_img .site_hover{width: max(32.3vw, 413px); height: max(18vw,232px);  position: absolute; top: max(1.5vw,19px); left: 50%; transform: translateX(-50%); transition: 10s linear;}
 
 #main_portfolio .pf_con .prev_img .site_hover.w01{background: url(../img/daeji_hover.jpg) center top no-repeat; background-size: cover; }
 #main_portfolio .pf_con .prev_img .site_hover.w02{background: url(../img/wstextile_hover.jpg) center top no-repeat; background-size: cover;}
