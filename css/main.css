@@ -98,26 +98,26 @@
 
 
 #main_artwork{position: relative; background-color: #fff;}
-#main_artwork .artwork_list{flex-wrap: wrap; display: flex;}
-#main_artwork .artwork_list li.con_load{width:50%; /*height: 400px;*/ position: relative; display: none; font-size: 0;}
-#main_artwork .artwork_list li.con_load.active{display: block;}
-#main_artwork .artwork_list li.con_load:after{display: none;}
-#main_artwork .artwork_list li a:hover img{transform: scale(1.1);}
-#main_artwork .artwork_list li a img{transition: 0.3s; width: 100%; height: 100%;}
-#main_artwork .artwork_list li a{display: block; width: 100%; height: 100%; overflow: hidden; position: relative;}
-#main_artwork .artwork_list li a .artwork_cover{background-color: rgba(0,0,0,0.5); opacity: 0; position: absolute; top: 0; width: 100%; height: 100%; transition: 0.3s; ;}
-#main_artwork .artwork_list li a:hover .artwork_cover{opacity: 1;}
-#main_artwork .artwork_list li a .artwork_cover strong{position: absolute;top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-size: 30px; text-align: center; word-break: keep-all;}
-#main_artwork .all_art{width: 140px; height: 45px; display: none; border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; font-size: 1rem;}
-#main_artwork .all_art a{display: block; height: 100%; line-height: 45px;}
-#main_artwork button.more{display: block; width: 140px; height: 45px; border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; background: transparent; font-size: 1rem; cursor: pointer;}
-#main_artwork .artwork_modal{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 999999; display: none;}
-#main_artwork .artwork_modal .artwork_con{position:absolute; top: 50%; left: 50%; width: 75%; max-width: 2000px; height: 80%; background-color: #fff; transform: translate(-50%, -50%);}
-#main_artwork .artwork_modal .artwork_conwrap{overflow: hidden; width: 100%; height: 100%; overflow-y: scroll;}
-#main_artwork .artwork_modal .artwork_con img{width: 100%;}
-#main_artwork .artwork_modal .close{position: absolute; top:-30px; right: 5px; background: transparent; cursor: pointer; width: 20px; height: 20px; border: none;}
-#main_artwork .artwork_modal .artwork_con .close:before{content:''; display: block; position: absolute; width: 20px; height: 2px; background-color: #fff; transform: rotate(45deg); }
-#main_artwork .artwork_modal .artwork_con .close:after{content:''; display: block; position: absolute; width: 20px; height: 2px; background-color: #fff; transform: rotate(135deg); }
+.artwork_list{flex-wrap: wrap; display: flex;}
+.artwork_list li.con_load{width:50%; /*height: 400px;*/ position: relative; display: none; font-size: 0;}
+.artwork_list li.con_load.active{display: block;}
+.artwork_list li.con_load:after{display: none;}
+.artwork_list li a:hover img{transform: scale(1.1);}
+.artwork_list li a img{transition: 0.3s; width: 100%; height: 100%;}
+.artwork_list li a{display: block; width: 100%; height: 100%; overflow: hidden; position: relative;}
+.artwork_list li a .artwork_cover{background-color: rgba(0,0,0,0.5); opacity: 0; position: absolute; top: 0; width: 100%; height: 100%; transition: 0.3s; ;}
+.artwork_list li a:hover .artwork_cover{opacity: 1;}
+.artwork_list li a .artwork_cover strong{position: absolute;top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-size: 30px; text-align: center; word-break: keep-all;}
+.all_art{width: 140px; height: 45px; display: none; border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; font-size: 1rem;}
+.all_art a{display: block; height: 100%; line-height: 45px;}
+button.more{display: block; width: 140px; height: 45px; border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; background: transparent; font-size: 1rem; cursor: pointer;}
+.artwork_modal{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 999999; display: none;}
+.artwork_modal .artwork_con{position:absolute; top: 50%; left: 50%; width: 75%; max-width: 2000px; height: 80%; background-color: #fff; transform: translate(-50%, -50%);}
+.artwork_modal .artwork_conwrap{overflow: hidden; width: 100%; height: 100%; overflow-y: scroll;}
+.artwork_modal .artwork_con img{width: 100%;}
+.artwork_modal .close{position: absolute; top:-30px; right: 5px; background: transparent; cursor: pointer; width: 20px; height: 20px; border: none;}
+.artwork_modal .artwork_con .close:before{content:''; display: block; position: absolute; width: 20px; height: 2px; background-color: #fff; transform: rotate(45deg); }
+.artwork_modal .artwork_con .close:after{content:''; display: block; position: absolute; width: 20px; height: 2px; background-color: #fff; transform: rotate(135deg); }
 
 
 
@@ -192,11 +192,11 @@
     #main_portfolio .pf_con .prev_img .pc{width: 380px;}
     #main_portfolio .pf_con .prev_img .site_hover{width: 350px; height: 194px; top: 17px;}
 
-    #main_artwork .artwork_list li.con_load{width: 100%;}
-    #main_artwork .artwork_modal .artwork_con{width: 90%;}
+    .artwork_list li.con_load{width: 100%;}
+    .artwork_modal .artwork_con{width: 90%;}
     #main_artwork button.more{font-size: 1rem; height: 45px;}
-    #main_artwork .all_art{height: 45px;}
-    #main_artwork .all_art a{line-height: 45px; font-size: 1rem;}
+    .all_art{height: 45px;}
+    .all_art a{line-height: 45px; font-size: 1rem;}
 
 
     #main_contact .contact01{font-size: 1.2rem; line-height: 2.1rem;}
@@ -220,8 +220,8 @@
     #main_portfolio .pf_con .prev_bottom button{width: 90px;}
     #main_portfolio .pf_con .prev_bottom button.process{margin-right: 15px;}
 
-    #main_artwork .all_art{width: 100px; height: 35px; margin: 60px auto;}
-    #main_artwork .all_art a{line-height: 35px; font-size: 1rem;}
+    .all_art{width: 100px; height: 35px; margin: 60px auto;}
+    .all_art a{line-height: 35px; font-size: 1rem;}
     #main_artwork button.more{width: 100px; height: 35px; margin: 60px auto;}
 
     #main_contact .contact01{font-size: 0.9rem; line-height: 1.6rem; text-align: left; font-family: 'Pretendard-Thin';}
