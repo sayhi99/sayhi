@@ -37,7 +37,7 @@
 
 /* all_artwork */
 .all_artwork_list{flex-wrap: wrap; display: flex; margin: 100px 0;}
-.all_artwork_list li.con_load{width:50%; position: relative; font-size: 0; display: block;}
+.all_artwork_list li.con_load{display: block;}
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 
