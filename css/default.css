@@ -12,7 +12,7 @@ a{text-decoration: none; color: #000; color: inherit;}
 
 /* font */
 html body{font-family: 'Pretendard', dotum, Verdana, Geneva, Tahoma, sans-serif;  width: 100%; overflow-x: hidden;}
-caption, div, th, td, ul, li, a, b, strong, span, input, select, textarea, p{font-family: 'Pretendard', dotum, Verdana, Geneva, Tahoma, sans-serif; color: #000;}
+caption, div, th, td, ul, li, a, b, strong, span, input, select, textarea, p{font-family: 'Pretendard', 'Apple SD Gothic Neo',dotum, Verdana, Geneva, Tahoma, sans-serif; color: #000;}
 
 /* transparent */
 
