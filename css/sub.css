@@ -80,6 +80,7 @@
 @media all and (max-width: 425px) {
 
     .web_title:after{content:'';}
+    #main_portfolio .pf_con .prev_bottom button.process{background-color: rgba(255,255,255,0.7);}
 
 } 
 
