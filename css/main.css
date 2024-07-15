@@ -15,8 +15,8 @@
 }
 
 .main_txt{text-align: center; background-color: transparent; position: absolute; z-index: 2;}
-.main_txt .big01{display: block; font-size: 14vw; letter-spacing: -15px; line-height: 110%; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
-.main_txt .big02{display: block; color: #ccc; font-size: 14vw; letter-spacing: -15px; line-height: 30px; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
+.main_txt .big01{display: block; font-size: 12vw; letter-spacing: -15px; line-height: 110%; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
+.main_txt .big02{display: block; color: #ccc; font-size: 12vw; letter-spacing: -15px; line-height: 30px; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
 .main_txt .small{margin-top:8vw; font-size: 1vw; line-height: 150%; background-color: transparent;}
 
 .main_tlt{font-family: 'Pretendard-Regular'; font-size: max(1.8rem, 1.5vw); display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
@@ -84,7 +84,7 @@
 
 #main_portfolio .pf_con .prev_img .site_hover:hover{background-position: center bottom;}
 #main_portfolio .pf_con .prev_bottom{text-align: center;}
-#main_portfolio .pf_con .prev_bottom .portf_sitename{font-family: 'Pretendard-Regular'; font-size: max(1.3vw, 1.3rem); margin: max(2.5vw, 50px) 0 max(2.3vw,40px); background: transparent;}
+#main_portfolio .pf_con .prev_bottom .portf_sitename{font-family: 'Pretendard-Regular'; font-size: max(1.3vw, 1.3rem); margin: max(2.5vw, 50px) 0 max(2.3vw,40px); background: transparent; word-break: keep-all;}
 #main_portfolio .pf_con .prev_bottom button{background-color: transparent; border: 1px solid #9b9b9b; width: max(6vw, 110px); height: max(2vw,35px);}
 #main_portfolio .pf_con .prev_bottom button a{font-size: max(1vw,0.9rem); display: block; height: 100%; line-height: max(2vw, 35px);}
 #main_portfolio .pf_con .prev_bottom button.process{margin-right: 60px;}
@@ -107,7 +107,7 @@
 .artwork_list li a{display: block; width: 100%; height: 100%; overflow: hidden; position: relative;}
 .artwork_list li a .artwork_cover{background-color: rgba(0,0,0,0.5); opacity: 0; position: absolute; top: 0; width: 100%; height: 100%; transition: 0.3s; ;}
 .artwork_list li a:hover .artwork_cover{opacity: 1;}
-.artwork_list li a .artwork_cover strong{position: absolute;top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-size: 30px; text-align: center; word-break: keep-all;}
+.artwork_list li a .artwork_cover strong{position: absolute;top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-size: 1.8rem; line-height: 2.5rem; text-align: center; word-break: keep-all; font-family: 'Pretendard-Medium';}
 .all_art{width: max(7vw, 130px); height: max(2.2vw,45px); display: none; border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; font-size: max(1vw, 1rem);}
 .all_art a{display: block; height: 100%; line-height: max(2.2vw,45px);}
 button.more{display: block; width: max(7vw, 130px); height: max(2.2vw,45px); border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; background: transparent; font-size: max(1vw, 1rem); cursor: pointer;}
@@ -129,7 +129,7 @@ button.more{display: block; width: max(7vw, 130px); height: max(2.2vw,45px); bor
 #main_contact strong{background-color: #000; color: #fff;}
 #main_contact .contact01{font-size: 1.3rem; font-family: 'Pretendard-Regular'; margin-bottom: 20px;}
 #main_contact .contact02{font-size: 1.5rem; font-family: 'Pretendard-Medium';}
-#main_contact .contact03{display: block; margin-bottom: 100px; font-size: 1.3rem; color: #878787; font-family: 'Pretendard-Regular'; }
+#main_contact .contact03{display: block; margin-bottom: 100px; font-size: 1.3rem; color: #878787; font-family: 'Pretendard-Regular'; word-break: keep-all;}
 #main_contact .mail{display: block; margin: 30px 0 60px; font-size: 4.8rem; font-family: 'SUITE-Regular'; letter-spacing: 2px;}
 
 
@@ -227,6 +227,7 @@ button.more{display: block; width: max(7vw, 130px); height: max(2.2vw,45px); bor
     .all_art{width: 100px; height: 35px; margin: 60px auto;}
     .all_art a{line-height: 35px; font-size: 1rem;}
     #main_artwork button.more{width: 100px; height: 35px; margin: 60px auto;}
+    .artwork_list li a .artwork_cover strong{font-size: 1.3rem;}
 
     #main_contact .contact01{font-size: 0.9rem; line-height: 1.6rem; text-align: left; font-family: 'Pretendard-Thin';}
     #main_contact .contact02{font-size: 1.2rem; text-align: left;}
