@@ -8,7 +8,7 @@ header{background-color: rgba(255, 255, 255, 1);}
 
 ul{list-style: none;}
 li{list-style: none;}
-a{text-decoration: none; color: #000;}
+a{text-decoration: none; color: #000; color: inherit;}
 
 /* font */
 html body{font-family: 'Pretendard', dotum, Verdana, Geneva, Tahoma, sans-serif;  width: 100%; overflow-x: hidden;}
