@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- slider css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>SAY HI PORTFOLIO</title>
 </head>
@@ -84,13 +85,15 @@
     </div>
     <div class="main_con_wrap" id="main_about">
         <div class="container2">
-            <h2 class="main_tlt">ABOUT</h2>
+            <h2 class="main_tlt" data-aos="fade-up">
+                <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
+            </h2>
             <div class="main_con">
-                <div class="about_l">
+                <div class="about_l" data-aos="fade-right">
                     <img src="img/profile_img.jpg">
                 </div>
                 <div class="about_r">
-                    <div class="about_con">
+                    <div class="about_con" data-aos="fade-up">
                         <h3 class="about_tlt">PROFILE</h3>
                         <ul class="profile">
                             <li>
@@ -107,7 +110,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="about_con">
+                    <div class="about_con" data-aos="fade-up">
                         <h3 class="about_tlt">EDUCATION & CERTIFICATE</h3>
                         <ul>
                             <li>
@@ -120,7 +123,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="about_con">
+                    <div class="about_con" data-aos="fade-up">
                         <h3 class="about_tlt">LICENSE</h3>
                         <ul>
                             <li>
@@ -129,7 +132,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="about_con">
+                    <div class="about_con" data-aos="fade-up">
                         <h3 class="about_tlt">SKILLS</h3>
                         <ul class="skills">
                             <li>
@@ -176,7 +179,8 @@
         </div>
         <div class="portfolio_conwrap">
             <div class="container2">
-                <h2 class="main_tlt">WEB PORTFOLIO</h2>
+                <h2 class="main_tlt" data-aos="fade-up"><span>W</span><span>E</span><span>B</span>
+                    <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span></h2>
                 <div class="pf_con_slider">
                     <div class="pf_con">
                         <div class="prev_img">
@@ -545,5 +549,9 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/gnb.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

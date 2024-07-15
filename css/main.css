@@ -20,7 +20,32 @@
 .main_txt .small{margin-top:8vw; font-size: 1vw; line-height: 150%; background-color: transparent;}
 
 .main_tlt{font-family: 'Pretendard'; font-weight: 600; font-size: max(1.8rem, 1.5vw); display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
-.main_tlt::after{content: ''; display: inline-block; width: 31px; height: 31px; border-radius: 50%; background-color: #009245; position: absolute; top: -7px; right: -15px; z-index: -1;}
+.main_tlt span{animation: wave 4s ease-in-out; animation-iteration-count: infinite; display: inline-block;}
+.main_tlt::after{content: ''; display: inline-block; width: 31px; height: 31px; border-radius: 50%; background-color: #009245; position: absolute; top: -7px; right: -15px; z-index: -1; /*animation: bounce 0.6s cubic-bezier(0, 0, 0.18, 0.99) infinite alternate;*/} 
+
+@keyframes wave {
+    0%, 15%, 100% {transform: translateY(0);}
+    10%{transform: translateY(-7px);}
+    20%{transform: translateY(-5px);}
+}
+/* @keyframes bounce{
+    to{
+        transform: translateY(-7px);
+    }
+} */
+
+.main_tlt span:nth-child(1) {animation-delay: 0.1s;}
+.main_tlt span:nth-child(2) {animation-delay: 0.18s;}
+.main_tlt span:nth-child(3) {animation-delay: 0.3s;}
+.main_tlt span:nth-child(4) {animation-delay: 0.42s;}
+.main_tlt span:nth-child(5) {animation-delay: 0.5s;}
+.main_tlt span:nth-child(6) {animation-delay: 0.62s;}
+.main_tlt span:nth-child(7) {animation-delay: 0.68s;}
+.main_tlt span:nth-child(8) {animation-delay: 0.75s;}
+.main_tlt span:nth-child(9) {animation-delay: 0.85s;}
+.main_tlt span:nth-child(10) {animation-delay: 0.92s;}
+.main_tlt span:nth-child(11) {animation-delay: 1.01s;}
+.main_tlt span:nth-child(12) {animation-delay: 1.09s;}
 
 .main_con_wrap{padding: 130px 0;}
 .main_con{display: flex;}
@@ -89,11 +114,11 @@
 #main_portfolio .pf_con .prev_bottom button a{font-size: max(1vw,0.9rem); display: block; height: 100%; line-height: max(2vw, 35px);}
 #main_portfolio .pf_con .prev_bottom button.process{margin-right: 60px;}
 
-#main_portfolio .slick-prev{position: absolute; cursor: pointer; bottom: 10px; left: calc(50% - max(13vw, 230px)); color: transparent; width: max(1.3vw, 22px); height: max(1.3vw, 22px); z-index: 1; color: transparent; background-color: transparent; border: none;}
-#main_portfolio .slick-prev:after{content:''; display: block;  width: max(0.8vw, 13px); height: max(0.8vw, 13px);  border-top: 3px solid #004922; border-right: 3px solid #004922; transform: rotate(225deg); position: absolute; top: 0; left: 5px;}
+#main_portfolio .slick-prev{position: absolute; cursor: pointer; bottom: 7px; left: calc(50% - max(13vw, 230px)); color: transparent; width: max(1.3vw, 22px); height: max(1.3vw, 22px); z-index: 1; color: transparent; background-color: transparent; border: none;}
+#main_portfolio .slick-prev:after{content:''; display: block;  width: max(0.8vw, 13px); height: max(0.8vw, 13px);  border-top: 3px solid #004922; border-right: 3px solid #004922; transform: rotate(225deg); position: absolute; top: 4px}
 
-#main_portfolio .slick-next{position: absolute; cursor: pointer; bottom: 10px; right: calc(50% - max(13vw, 230px)); color: transparent; width: max(1.3vw, 22px); height: max(1.3vw, 22px); z-index: 1; color: transparent; background-color: transparent; border: none;}
-#main_portfolio .slick-next:after{content:''; display: block; width: max(0.8vw, 13px); height: max(0.8vw, 13px); border-top: 3px solid #004922; border-right: 3px solid #004922; transform: rotate(45deg); position: absolute; top: 0; left: 5px;}
+#main_portfolio .slick-next{position: absolute; cursor: pointer; bottom: 7px; right: calc(50% - max(13vw, 230px)); color: transparent; width: max(1.3vw, 22px); height: max(1.3vw, 22px); z-index: 1; color: transparent; background-color: transparent; border: none;}
+#main_portfolio .slick-next:after{content:''; display: block; width: max(0.8vw, 13px); height: max(0.8vw, 13px); border-top: 3px solid #004922; border-right: 3px solid #004922; transform: rotate(45deg); position: absolute; top: 4px}
 
 
 
