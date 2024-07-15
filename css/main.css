@@ -160,6 +160,8 @@ button.more{display: block; width: max(7vw, 130px); height: max(2.2vw,45px); bor
     #main_about .about_l{width: 50%; margin-right: 30px;}
     #main_about .about_l img{width: 100%;}
     #main_about .about_r .about_con .ac_left{width: 30%;}
+    #main_about .about_r .about_con ul.skills .ac_left{width: 30%;}
+    #main_about .about_r .about_con ul.profile .ac_left{width: 30%;}
     #main_about .about_r .about_con .ac_right{width: 70%;}
 
     #main_contact .contact01{font-size: 24px; margin-bottom: 15px; line-height: 40px; word-break: keep-all;}
@@ -214,11 +216,13 @@ button.more{display: block; width: max(7vw, 130px); height: max(2.2vw,45px); bor
     .main_txt .big02{font-size: 70px; }
     .main_txt .small{font-size: 0.8rem; margin: 50px 20px 0; word-break: keep-all;}
 
+
     #main_portfolio .pf_con .prev_img .pc{width: 270px;}
     #main_portfolio .pf_con .prev_img .site_hover{width: 247px; top: 13px; height: 137px;}
     #main_portfolio .pf_con .prev_bottom .portf_sitename{font-size: 1.2rem;}
     #main_portfolio .pf_con .prev_bottom button{width: 90px;}
     #main_portfolio .pf_con .prev_bottom button.process{margin-right: 15px;}
+    #main_portfolio .pf_con .prev_bottom button.process{background-color: rgba(255,255,255,0.7);}
 
     .all_art{width: 100px; height: 35px; margin: 60px auto;}
     .all_art a{line-height: 35px; font-size: 1rem;}
