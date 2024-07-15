@@ -65,7 +65,7 @@
 /* tablet */
 @media all and (max-width: 768px) {
 
-    .web_title span{display: block;}
+    .web_title span{display: block; margin-top: 10px;}
     .work_info ul li{flex-wrap: wrap;}
     .work_info ul li b{width: 100%; margin-bottom: 10px;}
     .web_title:after{text-align: right;}
@@ -79,7 +79,16 @@
 /* mobile */
 @media all and (max-width: 425px) {
 
+    .web_title h2{font-size: 1.9rem; word-break: keep-all;}
+    .web_title span{font-size: 1.1rem;}
+    .web_title .tag_wrap .tag{font-size: 0.8rem;}
     .web_title:after{content:'';}
+    .wp_img{width: 100%; margin: 50px auto 80px;}
+    .overview h3, .work_info h3{font-size: 1.5rem;}
+    .overview > p{font-size: 1rem; line-height: 2.2rem;}
+    .overview h3, .work_info h3{margin-bottom: 1.7rem;}
+    .work_info ul li{font-size: 1rem; margin-bottom: 1.4rem;}
+    .pf_button{margin: 80px auto 120px;}
     #main_portfolio .pf_con .prev_bottom button.process{background-color: rgba(255,255,255,0.7);}
 
 } 
