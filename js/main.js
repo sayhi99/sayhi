@@ -80,96 +80,23 @@ function porloadImages(srcs) {
 }
 
 
-//mail wave animation
-
-// const wave2 = document.querySelector(".wave2");
-
-// wave2.innerHTML = wave2.textContent
-//   .split("")
-//   .map((letter, idx) => {
-//     if (letter === " ") return " ";
-//     return `<span style="animation-delay:${
-//       idx * 15
-//     }ms" class="letter">${letter}</span>`;
-//   })
-//   .join("");
-
-//   scroll animation
-// let windowHeight = window.innerHeight
-// const home4EventHandler = ()=>{
-//     const Text = document.querySelector('.home4_textwrap')
-
-
-//     if(Text.getBoundingClientRect().top < windowHeight-200){
-//         setTimeout(()=>{
-
-//         },200) 
-//         window.removeEventListener('scroll',home4EventHandler)
-//     }
-// }
-//  window.addEventListener('scroll',home4EventHandler)
-
-// $(window).scroll(function() {
-// 	var scroll = $(document).scrollTop();
-// 	var minusH = $(document).innerHeight() / 10;
-// 	var target1 = $('.box1').offset().top;
-// 	if (scroll > target1 - minusH) {
-//         const wave2 = document.querySelector(".wave2");
-
-//         wave2.innerHTML = wave2.textContent
-//           .split("")
-//           .map((letter, idx) => {
-//             if (letter === " ") return " ";
-//             return `<span style="animation-delay:${
-//               idx * 15
-//             }ms" class="letter">${letter}</span>`;
-//           })
-//           .join("");
-// 	}
-// });
-
-// const boxes = document.querySelectorAll('.box');
-
-// window.addEventListener('scroll',checkBoxes);
-
-// checkBoxes();
-
-// function checkBoxes(){
-// 	const triggerBottom = window.innerHeight / 5 * 4;
+//scroll animation
+window.addEventListener('scroll', function(){
+	var motionTarget = document.querySelectorAll('.moti');
+	var winHeight = window.innerHeight;
 	
-// 	boxes.forEach(box=>{
-// 		const boxTop = box.getBoundingClientRect().top;
-		
-// 		if(boxTop < triggerBottom) {
+	motionTarget.forEach(function(value, index){
+		if((motionTarget[index].getBoundingClientRect().top - winHeight) < -100){
+			motionTarget[index].classList.add('mt_on');
+		}else if((motionTarget[index].getBoundingClientRect().top - winHeight) > -100 && motionTarget[index].classList.contains('mt_on') == true){
+			motionTarget[index].classList.remove('mt_on');
+		}
+	})
+	
+});
 
-//             const wave2 = document.querySelector(".wave2");
 
-//             wave2.innerHTML = wave2.textContent
-//               .split("")
-//               .map((letter, idx) => {
-//                 if (letter === " ") return " ";
-//                 return `<span style="animation-delay:${
-//                   idx * 15
-//                 }ms" class="letter">${letter}</span>`;
-//               })
-//               .join("");
-            
-// 		} else {
-//             const wave2 = document.querySelector(".wave2");
-
-//             wave2.innerHTML = wave2.textContent
-//               .split("")
-//               .map((letter, idx) => {
-//                 if (letter === " ") return " ";
-//                 return `<span style="animation-delay:${
-//                   idx * 15
-//                 }ms">${letter}</span>`;
-//               })
-//               .join("");
-// 		}
-// 	})
-// }
-
+//mail wave animation
 
 const wave2 = document.querySelector(".wave2");
 

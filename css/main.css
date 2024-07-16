@@ -33,6 +33,10 @@
         transform: translateY(-7px);
     }
 } */
+.moti { opacity:0; transition:0.5s;}
+.moti.mv_left {transform: translateX(-50px);}
+.moti.mv_top {transform: translateY(50px);}
+.moti.mt_on { transform: translate(0); opacity:1; }
 
 .main_tlt span:nth-child(1) {animation-delay: 0.1s;}
 .main_tlt span:nth-child(2) {animation-delay: 0.18s;}
