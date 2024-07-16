@@ -83,3 +83,69 @@ function load(id, cnt, btn) {
 <div style="padding-top:20px;">
 <button type="button" id="js-btn-wrap" class="more">더보기</button>
 </div>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  word-spacing: 2px;
+  overflow: hidden;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.letter {
+  display: inline-block;
+  transform: translateY(100%);
+  animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+</style>
+<body>
+	<h2 class="title wave">
+		Reveal Animation
+	</h2>
+	<script>
+		const wave = document.querySelector(".wave");
+
+wave.innerHTML = wave.textContent
+  .split("")
+  .map((letter, idx) => {
+    if (letter === " ") return " ";
+    return `<span style="animation-delay:${
+      idx * 15
+    }ms" class="letter">${letter}</span>`;
+  })
+  .join("");
+	</script>
+</body>
+</html>
