@@ -27,9 +27,12 @@
 
 .pf_button{margin: 120px auto; display: flex; justify-content: center;}
 .pf_button .link:first-child{margin-right: 20px;}
-.pf_button .link{border: 1px solid #9b9b9b; width: 140px; height: 45px; }
-.pf_button .link a{display: block; width: 100%; height: 100%; font-size: 1rem; line-height: 45px; text-align: center; }
-.pf_button .link button{display: block; width: 100%; height: 100%; font-size: 1rem; line-height: 45px; text-align: center; background-color: transparent; border: none; cursor: pointer;}
+.pf_button .link{border: 1px solid #9b9b9b; width: 140px; height: 45px; transition: 0.3s;}
+.pf_button .link:hover{border: 1px solid #009245; color: #009245;}
+.pf_button .link:hover a{color:#009245}
+.pf_button .link:hover button{color:#009245}
+.pf_button .link a{display: block; width: 100%; height: 100%; font-size: 1rem; line-height: 45px; text-align: center; transition:0.3s;}
+.pf_button .link button{display: block; width: 100%; height: 100%; font-size: 1rem; line-height: 45px; text-align: center; background-color: transparent; border: none; cursor: pointer; transition: 0.3s;}
 
 
 
