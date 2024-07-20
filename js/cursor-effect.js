@@ -1,58 +1,68 @@
-const lerp = (a, b, n) => (1 - n) * a + n * b;
-const getMousePos = (e) => {
-  let posx = 0,
-      posy = 0;
+const cursor = document.querySelector('#cursor');
+const cursorCircle = cursor.querySelector('.cursor__circle');
+
+const mouse = { x: -100, y: -100 }; // mouse pointer's coordinates
+const pos = { x: 0, y: 0 }; // cursor's coordinates
+const speed = 0.1; // between 0 and 1
+
+const updateCoordinates = e => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+}
+window.addEventListener('mousemove', updateCoordinates);
+
+
+function getAngle(diffX, diffY) {
+  return Math.atan2(diffY, diffX) * 180 / Math.PI;
+}
+
+function getSqueeze(diffX, diffY) {
+  const distance = Math.sqrt(
+    Math.pow(diffX, 2) + Math.pow(diffY, 2)
+  );
+  const maxSqueeze = 0.15;
+  const accelerator = 1500;
+  return Math.min(distance / accelerator, maxSqueeze);
+}
+
+
+const updateCursor = () => {
+  const diffX = Math.round(mouse.x - pos.x);
+  const diffY = Math.round(mouse.y - pos.y);
   
-  if (!e) e = window.event;
-  if (e.pageX || e.pageY) {
-      posx = e.pageX;
-      posy = e.pageY;
-  }
-  else if (e.clientX || e.clientY) {
-      posx = e.clientX + body.scrollLeft + document.documentElement.scrollLeft;
-      posy = e.clientY + body.scrollTop + document.documentElement.scrollTop;
-  }
-  return { x: posx, y: posy };
+  pos.x += diffX * speed;
+  pos.y += diffY * speed;
+  
+  const angle = getAngle(diffX, diffY);
+  const squeeze = getSqueeze(diffX, diffY);
+  
+  const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
+  const rotate = 'rotate(' + angle +'deg)';
+  const translate = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
+
+  cursor.style.transform = translate;
+  cursorCircle.style.transform = rotate + scale;
+};
+
+function loop() {
+  updateCursor();
+  requestAnimationFrame(loop);
 }
 
-class Cursor {
-  constructor(el, amt = 1) {
-    this.DOM = {el: el};
-    this.amt = amt;
-    this.bounds = this.DOM.el.getBoundingClientRect();
-    this.styles = {
-      tx: {prev: 0, now: 0},
-      ty: {prev: 0, now: 0}
-    };
-    this.onMouseMoveEv = () => {
-      this.styles.tx.prev = this.styles.tx.now = mousepos.x - this.bounds.width / 2;
-      this.styles.ty.prev = this.styles.ty.now = mousepos.y - this.bounds.height / 2;
-      this.render();
-      window.removeEventListener('mousemove', this.onMouseMoveEv);
-    };
-    window.addEventListener('mousemove', this.onMouseMoveEv);
-  }
-  render() {
-    this.styles.tx.now = mousepos.x - this.bounds.width / 2;
-    this.styles.ty.now = mousepos.y - this.bounds.height / 2;
-    for (const key in this.styles) {
-      this.styles[key].prev = lerp(
-        this.styles[key].prev,
-        this.styles[key].now,
-        this.amt);
-    }
-    this.DOM.el.style.transform = `
-      translateX(${this.styles.tx.prev}px)
-      translateY(${this.styles.ty.prev}px)`;
-    requestAnimationFrame(() => this.render());
-  }
-}
-
-let mousepos = { x: 0, y: 0 };
-document.addEventListener('mousemove', ev => mousepos = getMousePos(ev));
-
-// --------------------------
-const point = new Cursor(document.querySelector('.cursor__point'), 0.2);
-const circle = new Cursor(document.querySelector('.cursor__circle'), 0.12);
+requestAnimationFrame(loop);
 
 
+
+const cursorModifiers = document.querySelectorAll('[cursor-class]');
+
+cursorModifiers.forEach(curosrModifier => {
+  curosrModifier.addEventListener('mouseenter', function() {
+    const className = this.getAttribute('cursor-class');
+    cursor.classList.add(className);
+  });
+  
+  curosrModifier.addEventListener('mouseleave', function() {
+    const className = this.getAttribute('cursor-class');
+    cursor.classList.remove(className);
+  });
+});

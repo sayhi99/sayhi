@@ -2,101 +2,268 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta content="yes" name="apple-mobile-web-app-capable" />   -->
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
 	<title>Document</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sub.css">
 </head>
 <body>
-	<style>
-		html:not(:hover) .cursor {
-    opacity: 0;
-  }
-  
-  .cursor {
-    opacity: 1;
-    transition-duration: 0.3s;
-  }
-  .cursor__point, .cursor__circle {
-    border-radius: 50%;
-    position: fixed;
-    z-index: 9999;
-  }
-  .cursor__point {
-    width: 6px;
-    height: 6px;
-    background-color: #000;
-  }
-  .cursor__circle {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
-  }
-	</style>
+	<header class="common_header">
+        <div class="container1">
+            <div class="common_header_top">
+                <h1 class="site_name">
+                    <a href="./">
+                        <img src="/img/sayhi_logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="topnav_wrap">
+                    <ul class="topnav">
+                        <li class="topnav_item">
+                            <a href="/#main_about">ABOUT</a>
+                        </li>
+                        <li class="topnav_item">
+                            <a href="#main_portfolio">WEB WORK</a>
+                        </li>
+                        <li class="topnav_item">
+                            <a href="/#main_artwork">ART WORK</a>
+                        </li>
+                        <li class="topnav_item">
+                            <a href="/#main_contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="cursor">
+	<div class="container2">
+        <div class="artwork_list_wrap">
+            <ul class="artwork_list all_artwork_list">
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac13">
+                        <img src="img/artwork_13.jpg">
+                        <div class="artwork_cover">
+                            <strong>우지커피 안성아양점 명함</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac12">
+                        <img src="img/artwork_12.jpg">
+                        <div class="artwork_cover">
+                            <strong>우지커피 안성아양점 안내문구</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac11">
+                        <img src="img/artwork_11.jpg">
+                        <div class="artwork_cover">
+                            <strong>웹사이트 팝업 제작</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac10">
+                        <img src="img/artwork_10.jpg">
+                        <div class="artwork_cover">
+                            <strong>헤세드 인증원 서브페이지</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac09">
+                        <img src="img/artwork_9.jpg">
+                        <div class="artwork_cover">
+                            <strong>종국이네 과일</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac08">
+                        <img src="img/artwork_8.jpg">
+                        <div class="artwork_cover">
+                            <strong>제일참청과</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac07">
+                        <img src="img/artwork_7.jpg">
+                        <div class="artwork_cover">
+                            <strong>에이스냉동 메인슬라이드</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac06">
+                        <img src="img/artwork_6.jpg">
+                        <div class="artwork_cover">
+                            <strong>채용공고 포스터(개인)</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac05">
+                        <img src="img/artwork_5.jpg">
+                        <div class="artwork_cover">
+                            <strong>코딩캠프 포스터(개인)</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac0">
+                        <img src="img/artwork_4.jpg">
+                        <div class="artwork_cover">
+                            <strong>엘르 잡지 표지(개인)</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac03">
+                        <img src="img/artwork_3.jpg">
+                        <div class="artwork_cover">
+                            <strong>해빗 어플(개인)</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac02">
+                        <img src="img/artwork_2.jpg">
+                        <div class="artwork_cover">
+                            <strong>꿀잠페스타 배너(개인)</strong>
+                        </div>
+                    </a>
+                </li>
+                <li class="con_load">
+                    <a href="javascript:void(0);" class="artwork_click" id="ac01">
+                        <img src="img/artwork_1.jpg">
+                        <div class="artwork_cover">
+                            <strong>로코유 로고(콘테스트)</strong>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="artwork_modal" id="am01">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_01.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="artwork_modal" id="am02">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_02.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="artwork_modal" id="am03">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_03.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="artwork_modal" id="am04">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_03.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="artwork_modal" id="am05">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_05.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="artwork_modal" id="am06">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_06.jpg">
+                </div>
+            </div>  
+        </div>
+        <div class="artwork_modal" id="am07">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_07.jpg">
+                </div>
+            </div>  
+        </div>
+        <div class="artwork_modal" id="am08">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_08.jpg">
+                </div>
+            </div>  
+        </div>
+        <div class="artwork_modal" id="am09">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_09.jpg">
+                </div>
+            </div>  
+        </div>
+        <div class="artwork_modal" id="am10">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_10.jpg">
+                </div>
+            </div>  
+        </div>
+        <div class="artwork_modal" id="am11">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_11.jpg">
+                </div>
+            </div>  
+        </div>
+        <div class="artwork_modal" id="am12">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_12.jpg">
+                </div>
+            </div>  
+        </div>
+        <div class="artwork_modal" id="am13">
+            <div class="artwork_con">
+                <button class="close"></button>
+                <div class="artwork_conwrap">
+                    <img src="img/artworkcon_13.jpg">
+                </div>
+            </div>  
+        </div>
+    </div>
+	<div class="cursor">
         <div class="cursor__point"></div>
         <div class="cursor__circle"></div>
      </div>
-
-	<script>
-		const lerp = (a, b, n) => (1 - n) * a + n * b;
-const getMousePos = (e) => {
-  let posx = 0,
-      posy = 0;
-  
-  if (!e) e = window.event;
-  if (e.pageX || e.pageY) {
-      posx = e.pageX;
-      posy = e.pageY;
-  }
-  else if (e.clientX || e.clientY) {
-      posx = e.clientX + body.scrollLeft + document.documentElement.scrollLeft;
-      posy = e.clientY + body.scrollTop + document.documentElement.scrollTop;
-  }
-  return { x: posx, y: posy };
-}
-
-class Cursor {
-  constructor(el, amt = 1) {
-    this.DOM = {el: el};
-    this.amt = amt;
-    this.bounds = this.DOM.el.getBoundingClientRect();
-    this.styles = {
-      tx: {prev: 0, now: 0},
-      ty: {prev: 0, now: 0}
-    };
-    this.onMouseMoveEv = () => {
-      this.styles.tx.prev = this.styles.tx.now = mousepos.x - this.bounds.width / 2;
-      this.styles.ty.prev = this.styles.ty.now = mousepos.y - this.bounds.height / 2;
-      this.render();
-      window.removeEventListener('mousemove', this.onMouseMoveEv);
-    };
-    window.addEventListener('mousemove', this.onMouseMoveEv);
-  }
-  render() {
-    this.styles.tx.now = mousepos.x - this.bounds.width / 2;
-    this.styles.ty.now = mousepos.y - this.bounds.height / 2;
-    for (const key in this.styles) {
-      this.styles[key].prev = lerp(
-        this.styles[key].prev,
-        this.styles[key].now,
-        this.amt);
-    }
-    this.DOM.el.style.transform = `
-      translateX(${this.styles.tx.prev}px)
-      translateY(${this.styles.ty.prev}px)`;
-    requestAnimationFrame(() => this.render());
-  }
-}
-
-let mousepos = { x: 0, y: 0 };
-document.addEventListener('mousemove', ev => mousepos = getMousePos(ev));
-
-// --------------------------
-const point = new Cursor(document.querySelector('.cursor__point'), 0.2);
-const circle = new Cursor(document.querySelector('.cursor__circle'), 0.12);
-
-
-
-	</script>
+	 <footer class="common_footer">
+        <div class="container2">
+            <p class="footer_top">ⓒ2024 setfire.com. All rights reserved.</p>
+            <p class="footer_btm">본 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었습니다.<br>일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</p>
+        </div>
+    </footer>
+	 <script type="text/javascript" src="./js/cursor-effect.js"></script>
 </body>
 </html>
