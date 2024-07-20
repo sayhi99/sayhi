@@ -156,3 +156,5 @@ observer.observe(document.querySelector('.wave2'));
 // });
 
 // console.log(cursor.parentElement);
+
+

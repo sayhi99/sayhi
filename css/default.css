@@ -10,6 +10,31 @@ ul{list-style: none;}
 li{list-style: none;}
 a{text-decoration: none; color: #000; color: inherit;}
 
+/* cursor-effect */
+html:not(:hover) .cursor {
+    opacity: 0;
+  }
+  
+  .cursor {
+    opacity: 1;
+    transition-duration: 0.3s;
+  }
+  .cursor__point, .cursor__circle {
+    border-radius: 50%;
+    position: fixed;
+  }
+  .cursor__point {
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+  }
+  .cursor__circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+  }
+  
+
 /* font */
 html body{font-family: 'Pretendard', dotum, Verdana, Geneva, Tahoma, sans-serif;  width: 100%; overflow-x: hidden;}
 caption, div, th, td, ul, li, a, b, strong, span, input, select, textarea, p, button{font-family: 'Pretendard', 'Apple SD Gothic Neo',dotum, Verdana, Geneva, Tahoma, sans-serif; color: #000;}

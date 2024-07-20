@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<style>
-		html:not(:hover) .cursor {
-    opacity: 0;
-  }
-  
-  .cursor {
-    opacity: 1;
-    transition-duration: 0.3s;
-  }
-  .cursor__point, .cursor__circle {
-    border-radius: 50%;
-    position: fixed;
-    z-index: 9999;
-  }
-  .cursor__point {
-    width: 6px;
-    height: 6px;
-    background-color: #000;
-  }
-  .cursor__circle {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
-  }
-	</style>
-
-    <div class="cursor">
-        <div class="cursor__point"></div>
-        <div class="cursor__circle"></div>
-     </div>
-
-	<script>
-		const lerp = (a, b, n) => (1 - n) * a + n * b;
+const lerp = (a, b, n) => (1 - n) * a + n * b;
 const getMousePos = (e) => {
   let posx = 0,
       posy = 0;
@@ -96,7 +56,3 @@ const point = new Cursor(document.querySelector('.cursor__point'), 0.2);
 const circle = new Cursor(document.querySelector('.cursor__circle'), 0.12);
 
 
-
-	</script>
-</body>
-</html>
