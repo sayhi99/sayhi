@@ -1,5 +1,5 @@
+
 $(document).ready(function(){
-    $('.pf_con_slider').slick();
 
     $("#ac01").click(function(){
         $("#am01").fadeIn();
