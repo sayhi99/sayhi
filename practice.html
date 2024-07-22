@@ -1,269 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta content="yes" name="apple-mobile-web-app-capable" />   -->
-    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
-	<title>Document</title>
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/sub.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .skill_bar{border: 1px solid #ccc; width: 50%;}
+ ul.skills li:nth-child(1) .skill_fill{ width: 90%; height: 100%;}
+ ul.skills li:nth-child(2) .skill_fill{width: 60%; height: 100%;}
+ ul.skills li:nth-child(3) .skill_fill{width: 90%; height: 100%;}
+ ul.skills li:nth-child(4) .skill_fill{width: 90%; height: 100%;}
+ ul.skills li:nth-child(5) .skill_fill{width: 50%; height: 100%;}
+ ul.skills li .skill_fill{position: relative; height: 100%;}
+ ul.skills li .skill_fill::after{content:''; width: 100%; height: 100%; display: block; position: absolute; background-color: #539c75; animation: skillfill 1s ease-in-out;}
+ @keyframes skillfill{
+    0%{width: 0;}
+    100%{width: 100%;}
+}
+.moti { opacity:0; transition:0.5s;}
+.moti.mv_left {transform: translateX(-50px);}
+.moti.mv_top {transform: translateY(50px);}
+.moti.mt_on { transform: translate(0); opacity:1; }
+    </style>
 </head>
 <body>
-	<header class="common_header">
-        <div class="container1">
-            <div class="common_header_top">
-                <h1 class="site_name">
-                    <a href="./">
-                        <img src="/img/sayhi_logo.png" alt="">
-                    </a>
-                </h1>
-                <div class="topnav_wrap">
-                    <ul class="topnav">
-                        <li class="topnav_item">
-                            <a href="/#main_about">ABOUT</a>
-                        </li>
-                        <li class="topnav_item">
-                            <a href="#main_portfolio">WEB WORK</a>
-                        </li>
-                        <li class="topnav_item">
-                            <a href="/#main_artwork">ART WORK</a>
-                        </li>
-                        <li class="topnav_item">
-                            <a href="/#main_contact">CONTACT</a>
-                        </li>
-                    </ul>
+    <div class="about_con moti mv_top">
+        <h3 class="about_tlt">SKILLS</h3>
+        <ul class="skills">
+            <li>
+                <p class="ac_left">Photoshop</p>
+                <div class="skill_bar">
+                    <div class="skill_fill" data-skill="90%"></div>
                 </div>
-            </div>
-        </div>
-    </header>
-
-	<div class="container2">
-        <div class="artwork_list_wrap">
-            <ul class="artwork_list all_artwork_list">
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac13">
-                        <img src="img/artwork_13.jpg">
-                        <div class="artwork_cover">
-                            <strong>우지커피 안성아양점 명함</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac12">
-                        <img src="img/artwork_12.jpg">
-                        <div class="artwork_cover">
-                            <strong>우지커피 안성아양점 안내문구</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac11">
-                        <img src="img/artwork_11.jpg">
-                        <div class="artwork_cover">
-                            <strong>웹사이트 팝업 제작</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac10">
-                        <img src="img/artwork_10.jpg">
-                        <div class="artwork_cover">
-                            <strong>헤세드 인증원 서브페이지</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac09">
-                        <img src="img/artwork_9.jpg">
-                        <div class="artwork_cover">
-                            <strong>종국이네 과일</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac08">
-                        <img src="img/artwork_8.jpg">
-                        <div class="artwork_cover">
-                            <strong>제일참청과</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac07">
-                        <img src="img/artwork_7.jpg">
-                        <div class="artwork_cover">
-                            <strong>에이스냉동 메인슬라이드</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac06">
-                        <img src="img/artwork_6.jpg">
-                        <div class="artwork_cover">
-                            <strong>채용공고 포스터(개인)</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac05">
-                        <img src="img/artwork_5.jpg">
-                        <div class="artwork_cover">
-                            <strong>코딩캠프 포스터(개인)</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac0">
-                        <img src="img/artwork_4.jpg">
-                        <div class="artwork_cover">
-                            <strong>엘르 잡지 표지(개인)</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac03">
-                        <img src="img/artwork_3.jpg">
-                        <div class="artwork_cover">
-                            <strong>해빗 어플(개인)</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac02">
-                        <img src="img/artwork_2.jpg">
-                        <div class="artwork_cover">
-                            <strong>꿀잠페스타 배너(개인)</strong>
-                        </div>
-                    </a>
-                </li>
-                <li class="con_load">
-                    <a href="javascript:void(0);" class="artwork_click" id="ac01">
-                        <img src="img/artwork_1.jpg">
-                        <div class="artwork_cover">
-                            <strong>로코유 로고(콘테스트)</strong>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="artwork_modal" id="am01">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_01.jpg">
+            </li>
+            <li>
+                <p class="ac_left">Illustrator</p>
+                <div class="skill_bar">
+                    <div class="skill_fill" data-skill="60%"></div>
                 </div>
-            </div>
-        </div>
-        <div class="artwork_modal" id="am02">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_02.jpg">
+            </li>
+            <li>
+                <p class="ac_left">HTML</p>
+                <div class="skill_bar">
+                    <div class="skill_fill" data-skill="90%"></div>
                 </div>
-            </div>
-        </div>
-        <div class="artwork_modal" id="am03">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_03.jpg">
+            </li>
+            <li>
+                <p class="ac_left">CSS</p>
+                <div class="skill_bar">
+                    <div class="skill_fill" data-skill="90%"></div>
                 </div>
-            </div>
-        </div>
-        <div class="artwork_modal" id="am04">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_03.jpg">
+            </li>
+            <li>
+                <p class="ac_left">JQUERY</p>
+                <div class="skill_bar">
+                    <div class="skill_fill" data-skill="50%"></div>
                 </div>
-            </div>
-        </div>
-        <div class="artwork_modal" id="am05">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_05.jpg">
-                </div>
-            </div>
-        </div>
-        <div class="artwork_modal" id="am06">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_06.jpg">
-                </div>
-            </div>  
-        </div>
-        <div class="artwork_modal" id="am07">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_07.jpg">
-                </div>
-            </div>  
-        </div>
-        <div class="artwork_modal" id="am08">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_08.jpg">
-                </div>
-            </div>  
-        </div>
-        <div class="artwork_modal" id="am09">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_09.jpg">
-                </div>
-            </div>  
-        </div>
-        <div class="artwork_modal" id="am10">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_10.jpg">
-                </div>
-            </div>  
-        </div>
-        <div class="artwork_modal" id="am11">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_11.jpg">
-                </div>
-            </div>  
-        </div>
-        <div class="artwork_modal" id="am12">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_12.jpg">
-                </div>
-            </div>  
-        </div>
-        <div class="artwork_modal" id="am13">
-            <div class="artwork_con">
-                <button class="close"></button>
-                <div class="artwork_conwrap">
-                    <img src="img/artworkcon_13.jpg">
-                </div>
-            </div>  
-        </div>
+            </li>
+        </ul>
     </div>
-	<div class="cursor">
-        <div class="cursor__point"></div>
-        <div class="cursor__circle"></div>
-     </div>
-	 <footer class="common_footer">
-        <div class="container2">
-            <p class="footer_top">ⓒ2024 setfire.com. All rights reserved.</p>
-            <p class="footer_btm">본 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었습니다.<br>일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</p>
-        </div>
-    </footer>
-	 <script type="text/javascript" src="./js/cursor-effect.js"></script>
+    <script>
+        window.addEventListener('scroll', function(){
+	var motionTarget = document.querySelectorAll('.moti');
+	var winHeight = window.innerHeight;
+	
+	motionTarget.forEach(function(value, index){
+		if((motionTarget[index].getBoundingClientRect().top - winHeight) < -100){
+			motionTarget[index].classList.add('mt_on');
+		}else if((motionTarget[index].getBoundingClientRect().top - winHeight) > -100 && motionTarget[index].classList.contains('mt_on') == true){
+			motionTarget[index].classList.remove('mt_on');
+		}
+	})
+	
+});
+    </script>
 </body>
 </html>

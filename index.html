@@ -78,9 +78,11 @@
               </svg>
         </div>
         <div class="main_txt">
-            <strong class="big01">SAY HI</strong>
-            <strong class="big02">TO YOU</strong>
-            <p class="small">반갑습니다! 웹디자이너이자 퍼블리셔 <strong>세화</strong>입니다.<br>적극적인 소통을 통해 화합해 나가며 사용자가 편안한 UI/UX를 만드는 것이 저의 목표입니다.</p>
+            <strong class="big01" data-aos="fade-up" data-aos-duration="700">SAY HI</strong>
+            <strong class="big02" data-aos="fade-up"
+            data-aos-delay="300" data-aos-duration="700">TO YOU</strong>
+            <p class="small" data-aos="fade-up"
+            data-aos-delay="600" data-aos-duration="700">반갑습니다! 웹디자이너이자 퍼블리셔 <strong>세화</strong>입니다.<br>적극적인 소통을 통해 화합해 나가며 사용자가 편안한 UI/UX를 만드는 것이 저의 목표입니다.</p>
         </div>
     </div>
     <div class="main_con_wrap" id="main_about">
@@ -138,31 +140,31 @@
                             <li>
                                 <p class="ac_left">Photoshop</p>
                                 <div class="skill_bar">
-                                    <div class="skill_fill"></div>
+                                    <div class="skill_fill" data-skill="90%"></div>
                                 </div>
                             </li>
                             <li>
                                 <p class="ac_left">Illustrator</p>
                                 <div class="skill_bar">
-                                    <div class="skill_fill"></div>
+                                    <div class="skill_fill" data-skill="60%"></div>
                                 </div>
                             </li>
                             <li>
                                 <p class="ac_left">HTML</p>
                                 <div class="skill_bar">
-                                    <div class="skill_fill"></div>
+                                    <div class="skill_fill" data-skill="90%"></div>
                                 </div>
                             </li>
                             <li>
                                 <p class="ac_left">CSS</p>
                                 <div class="skill_bar">
-                                    <div class="skill_fill"></div>
+                                    <div class="skill_fill" data-skill="90%"></div>
                                 </div>
                             </li>
                             <li>
                                 <p class="ac_left">JQUERY</p>
                                 <div class="skill_bar">
-                                    <div class="skill_fill"></div>
+                                    <div class="skill_fill" data-skill="50%"></div>
                                 </div>
                             </li>
                         </ul>
@@ -556,6 +558,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/gnb.js"></script>
     <script type="text/javascript" src="./js/cursor-effect.js"></script>
@@ -564,6 +567,8 @@
              $('.pf_con_slider').slick();
         });
     </script>
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

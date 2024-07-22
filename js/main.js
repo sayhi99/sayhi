@@ -81,18 +81,25 @@ function porloadImages(srcs) {
 
 
 //scroll animation
-window.addEventListener('scroll', function(){
-	var motionTarget = document.querySelectorAll('.moti');
-	var winHeight = window.innerHeight;
-	
-	motionTarget.forEach(function(value, index){
-		if((motionTarget[index].getBoundingClientRect().top - winHeight) < -100){
-			motionTarget[index].classList.add('mt_on');
-		}else if((motionTarget[index].getBoundingClientRect().top - winHeight) > -100 && motionTarget[index].classList.contains('mt_on') == true){
-			motionTarget[index].classList.remove('mt_on');
-		}
-	})
-	
+
+window.addEventListener('scroll', function() {
+    var motionTargets = document.querySelectorAll('.moti');
+    var winHeight = window.innerHeight;
+
+    motionTargets.forEach(function(target, index) {
+        var rect = target.getBoundingClientRect();
+        if (rect.top - winHeight < -100) {
+            if (!target.classList.contains('mt_on')) {
+                target.classList.add('mt_on');
+                animateSkills(target);
+            }
+        } else {
+            if (target.classList.contains('mt_on')) {
+                target.classList.remove('mt_on');
+                resetSkills(target);
+            }
+        }
+    });
 });
 
 
@@ -158,3 +165,19 @@ observer.observe(document.querySelector('.wave2'));
 // console.log(cursor.parentElement);
 
 
+function animateSkills(target) {
+    var skillFills = target.querySelectorAll('.skill_fill');
+    skillFills.forEach(function(skillFill) {
+        setTimeout(function() {
+            var skillWidth = skillFill.getAttribute('data-skill');
+            skillFill.style.width = skillWidth;
+        }, 500); // Delay 
+    });
+}
+
+function resetSkills(target) {
+    var skillFills = target.querySelectorAll('.skill_fill');
+    skillFills.forEach(function(skillFill) {
+        skillFill.style.width = '0';
+    });
+}
