@@ -2,9 +2,9 @@
 const cursor = document.querySelector('#cursor');
 const cursorCircle = cursor.querySelector('.cursor__circle');
 
-const mouse = { x: -100, y: -100 }; // mouse pointer's coordinates
-const pos = { x: 0, y: 0 }; // cursor's coordinates
-const speed = 0.1; // between 0 and 1
+const mouse = { x: -100, y: -100 }; // 포인터 좌표
+const pos = { x: 0, y: 0 }; // 커서 좌표
+const speed = 0.1; // 0과1사이
 
 const updateCoordinates = e => {
   mouse.x = e.clientX;

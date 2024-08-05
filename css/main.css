@@ -19,7 +19,7 @@
 .main_txt .big02{display: block; color: #ccc; font-size: 12vw; letter-spacing: -15px; line-height: 30px; font-family: 'Noto Sans KR'; font-weight: 700; background-color: transparent;}
 .main_txt .small{margin-top:8vw; font-size: 1vw; line-height: 150%; background-color: transparent;}
 
-.main_tlt{font-family: 'Pretendard'; font-weight: 600; font-size: max(1.8rem, 1.5vw); display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
+.main_tlt{font-family: 'Pretendard'; font-weight: 600; font-size: max(29px, 1.5vw); display: inline-block; position: relative; margin-bottom: 50px; z-index: 1; background: transparent; letter-spacing: 1px;}
 .main_tlt span{animation: wave 4s ease-in-out; animation-iteration-count: infinite; display: inline-block;}
 .main_tlt::after{content: ''; display: inline-block; width: 31px; height: 31px; border-radius: 50%; background-color: #009245; position: absolute; top: -7px; right: -15px; z-index: -1; /*animation: bounce 0.6s cubic-bezier(0, 0, 0.18, 0.99) infinite alternate;*/} 
 
@@ -111,10 +111,10 @@ ul.skills li .skill_fill {position: relative; height: 100%; width: 0; background
 
 #main_portfolio .pf_con .prev_img .site_hover:hover{background-position: center bottom;}
 #main_portfolio .pf_con .prev_bottom{text-align: center;}
-#main_portfolio .pf_con .prev_bottom .portf_sitename{font-weight: 400; font-size: max(1.3vw, 1.3rem); margin: max(2.5vw, 50px) 0 max(2.3vw,40px); background: transparent; word-break: keep-all;}
+#main_portfolio .pf_con .prev_bottom .portf_sitename{font-weight: 400; font-size: max(1.3vw, 21px); margin: max(2.5vw, 50px) 0 max(2.3vw,40px); background: transparent; word-break: keep-all;}
 #main_portfolio .pf_con .prev_bottom button{background-color: transparent; border: 1px solid #9b9b9b; width: max(6vw, 110px); height: max(2vw,35px); transition: 0.3s;;}
 #main_portfolio .pf_con .prev_bottom button:hover{border: 1px solid #009245; }
-#main_portfolio .pf_con .prev_bottom button a{font-size: max(1vw,0.9rem); display: block; height: 100%; line-height: max(2vw, 35px); transition:0.3s;}
+#main_portfolio .pf_con .prev_bottom button a{font-size: max(1vw,14px); display: block; height: 100%; line-height: max(2vw, 35px); transition:0.3s;}
 #main_portfolio .pf_con .prev_bottom button:hover a{color:#009245;}
 #main_portfolio .pf_con .prev_bottom button.process{margin-right: 60px;}
 
@@ -136,12 +136,12 @@ ul.skills li .skill_fill {position: relative; height: 100%; width: 0; background
 .artwork_list li a{display: block; width: 100%; height: 100%; overflow: hidden; position: relative;}
 .artwork_list li a .artwork_cover{background-color: rgba(0,0,0,0.5); opacity: 0; position: absolute; top: 0; width: 100%; height: 100%; transition: 0.3s; ;}
 .artwork_list li a:hover .artwork_cover{opacity: 1;}
-.artwork_list li a .artwork_cover strong{position: absolute;top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-size: 1.8rem; line-height: 2.5rem; text-align: center; word-break: keep-all; font-weight: 500;}
-.all_art{width: max(7vw, 130px); height: max(2.2vw,45px); display: none; border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; font-size: max(1vw, 1rem); transition: 0.3s;}
+.artwork_list li a .artwork_cover strong{position: absolute;top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-size: 29px; line-height: 40px; text-align: center; word-break: keep-all; font-weight: 500;}
+.all_art{width: max(7vw, 130px); height: max(2.2vw,45px); display: none; border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; font-size: max(1vw, 16px); transition: 0.3s;}
 .all_art a{display: block; height: 100%; line-height: max(2.2vw,45px); transition:0.3s;}
 .all_art:hover{ border: 1px solid #009245; transform: translateY(7px);}
 .all_art:hover a{color:#009245;}
-button.more{display: block; width: max(7vw, 130px); height: max(2.2vw,45px); border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; background: transparent; font-size: max(1vw, 1rem); cursor: pointer; transition:0.3s;}
+button.more{display: block; width: max(7vw, 130px); height: max(2.2vw,45px); border: 1px solid #9b9b9b; text-align: center; margin: 100px auto 50px; background: transparent; font-size: max(1vw, 16px); cursor: pointer; transition:0.3s;}
 button.more:hover{color: #009245; border: 1px solid #009245; transform: translateY(7px);}
 .artwork_modal{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 999999; display: none;}
 .artwork_modal .artwork_con{position:absolute; top: 50%; left: 50%; width: 75%; max-width: 2000px; height: 80%; background-color: #fff; transform: translate(-50%, -50%);}
@@ -159,10 +159,10 @@ button.more:hover{color: #009245; border: 1px solid #009245; transform: translat
 #main_contact .contact_con{background-color: #000; text-align: right;}
 #main_contact p,
 #main_contact strong > span{ color: #fff;}
-#main_contact .contact01{font-size: 1.3rem; font-weight: 400; margin-bottom: 20px;}
-#main_contact .contact02{font-size: 1.5rem; font-weight: 500;}
-#main_contact .contact03{display: block; margin-bottom: 100px; font-size: 1.3rem; color: #878787; font-weight: 400; word-break: keep-all;}
-#main_contact .mail{display: block; margin: 30px 0 60px; font-size: 4.8rem; font-family: 'SUITE-Regular'; letter-spacing: 2px; overflow: hidden;}
+#main_contact .contact01{font-size: 21px; font-weight: 400; margin-bottom: 20px;}
+#main_contact .contact02{font-size: 24px; font-weight: 500;}
+#main_contact .contact03{display: block; margin-bottom: 100px; font-size: 21px; color: #878787; font-weight: 400; word-break: keep-all;}
+#main_contact .mail{display: block; margin: 30px 0 60px; font-size: 77px; font-family: 'SUITE-Regular'; letter-spacing: 2px; overflow: hidden;}
 
 .letter {
     display: inline-block;
@@ -185,7 +185,7 @@ button.more:hover{color: #009245; border: 1px solid #009245; transform: translat
 @media all and (max-width:1320px) {
 
     #main_portfolio .portfolio_bg .c1{right: -50px;}
-    #main_contact .mail{font-size: 5rem;}
+    #main_contact .mail{font-size: 80px;}
 
 
     
@@ -200,7 +200,7 @@ button.more:hover{color: #009245; border: 1px solid #009245; transform: translat
 
     .main_txt .big01{font-size: 110px; letter-spacing: -7px;}
     .main_txt .big02{font-size: 110px; line-height: 40px; letter-spacing: -7px;}
-    .main_txt .small{font-size: 1rem;}
+    .main_txt .small{font-size: 16px;}
 
     #main_about .about_l{width: 50%; margin-right: 30px;}
     #main_about .about_l img{width: 100%;}
@@ -210,7 +210,7 @@ button.more:hover{color: #009245; border: 1px solid #009245; transform: translat
     #main_about .about_r .about_con .ac_right{width: 70%;}
 
     #main_contact .contact01{font-size: 24px; margin-bottom: 15px; line-height: 40px; word-break: keep-all;}
-    #main_contact .mail{font-size: 3rem;}
+    #main_contact .mail{font-size: 48px;}
 
 }
 
@@ -223,7 +223,7 @@ button.more:hover{color: #009245; border: 1px solid #009245; transform: translat
 
     .main_txt .small{margin-top: 80px; word-break: keep-all;}
 
-    .main_tlt{font-size: 1.5rem;}
+    .main_tlt{font-size: 24px;}
     .main_con_wrap{padding: 80px 0;}
 
     .main_con{flex-wrap: wrap;}
@@ -235,20 +235,20 @@ button.more:hover{color: #009245; border: 1px solid #009245; transform: translat
     #main_portfolio .portfolio_bg .c1{display: none;}
     #main_portfolio .portfolio_bg .c2{display: none;}
     #main_portfolio .portfolio_bg .c3{width: 400px; height: 400px; left: -250px; bottom: -25%;}
-    #main_portfolio .pf_con .prev_bottom button a{font-size: 1rem;}
+    #main_portfolio .pf_con .prev_bottom button a{font-size: 16px;}
     #main_portfolio .pf_con .prev_img .pc{width: 380px;}
     #main_portfolio .pf_con .prev_img .site_hover{width: 350px; height: 194px; top: 17px;}
 
     .artwork_list li.con_load{width: 100%;}
     .artwork_modal .artwork_con{width: 90%;}
-    #main_artwork button.more{font-size: 1rem; height: 45px;}
+    #main_artwork button.more{font-size: 16px; height: 45px;}
     .all_art{height: 45px;}
-    .all_art a{line-height: 45px; font-size: 1rem;}
+    .all_art a{line-height: 45px; font-size: 16px;}
 
 
-    #main_contact .contact01{font-size: 1.2rem; line-height: 2.1rem;}
-    #main_contact .contact02{font-size: 1.4rem; line-height: 2.1rem;}
-    #main_contact .contact03{font-size: 1.2rem;}
+    #main_contact .contact01{font-size: 19px; line-height: 34px;}
+    #main_contact .contact02{font-size: 22px; line-height: 34px;}
+    #main_contact .contact03{font-size: 19px;}
 
     
 
@@ -259,25 +259,25 @@ button.more:hover{color: #009245; border: 1px solid #009245; transform: translat
 
     .main_txt .big01{font-size: 70px; letter-spacing: -7px;}
     .main_txt .big02{font-size: 70px; }
-    .main_txt .small{font-size: 0.8rem; margin: 50px 20px 0; word-break: keep-all;}
+    .main_txt .small{font-size: 13px; margin: 50px 20px 0; word-break: keep-all;}
 
 
     #main_portfolio .pf_con .prev_img .pc{width: 270px;}
     #main_portfolio .pf_con .prev_img .site_hover{width: 247px; top: 13px; height: 137px;}
-    #main_portfolio .pf_con .prev_bottom .portf_sitename{font-size: 1.2rem;}
+    #main_portfolio .pf_con .prev_bottom .portf_sitename{font-size: 19px;}
     #main_portfolio .pf_con .prev_bottom button{width: 90px;}
     #main_portfolio .pf_con .prev_bottom button.process{margin-right: 15px;}
     #main_portfolio .pf_con .prev_bottom button.process{background-color: rgba(255,255,255,0.7);}
 
     .all_art{width: 100px; height: 35px; margin: 60px auto;}
-    .all_art a{line-height: 35px; font-size: 1rem;}
+    .all_art a{line-height: 35px; font-size: 16px;}
     #main_artwork button.more{width: 100px; height: 35px; margin: 60px auto;}
-    .artwork_list li a .artwork_cover strong{font-size: 1.3rem;}
+    .artwork_list li a .artwork_cover strong{font-size: 21px;}
 
-    #main_contact .contact01{font-size: 0.9rem; line-height: 1.6rem; text-align: left; font-weight: 100;}
-    #main_contact .contact02{font-size: 1.2rem; text-align: left;}
-    #main_contact .mail{font-size: 1.5rem; margin: 20px 0 30px;}
-    #main_contact .contact03{font-size: 0.9rem; font-weight: 100;}
+    #main_contact .contact01{font-size: 14px; line-height: 20px; text-align: left; font-weight: 100; margin-bottom: 50px;}
+    #main_contact .contact02{font-size: 18px; text-align: left;}
+    #main_contact .mail{font-size: 24px; margin: 0 0 30px; letter-spacing: 1px;}
+    #main_contact .contact03{font-size: 14px; font-weight: 100; text-align: left; line-height: 20px;}
 
 } 
 

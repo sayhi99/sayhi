@@ -46,6 +46,7 @@ $(document).ready(function(){
 
 });
 
+//more btn 클릭시 리스트 노출
 $(window).on('load', function(){
     load('#artwork_list_wrap', '4');
     $("#js-more-wrap").on("click", function(){
@@ -66,6 +67,7 @@ function load(id, cnt, btn){
     $(art_list + ":lt(" + art_total_cnt + ")").addClass("active");
 }
 
+//이미지 로딩 개선
 function preloadImage(src) {
   return new Promise((resolve, reject) => {
     const img = new Image();
@@ -133,37 +135,7 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('.wave2'));
 
 
-
-// import "./styles.css";
-// import curDot from "cursor-dot";
-
-// const $ = s => document.querySelector(s);
-
-// const cursor = curDot({
-//   easing: 4
-// });
-
-// cursor.over(".title", {
-//   background: "#fff"
-// });
-
-// cursor.over(".react1", {
-//   borderColor: "rgba(255,255,255,.38)"
-// });
-
-// cursor.over(".react2", {
-//   scale: 0.5,
-//   background: "#fff"
-// });
-
-// cursor.over($(".react3"), {
-//   scale: 1.4,
-//   background: "#faa2c1",
-//   borderColor: "transparent"
-// });
-
-// console.log(cursor.parentElement);
-
+//스킬바 애니메이션
 
 function animateSkills(target) {
     var skillFills = target.querySelectorAll('.skill_fill');
