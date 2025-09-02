@@ -400,7 +400,7 @@ ul.skills li .skill_fill {
   background-size: cover;
 }
 #main_portfolio .pf_con .prev_img .site_hover.w13 {
-  background: url(../img/medimoa_hover.webp) center top no-repeat;
+  background: url(../img/medimoa_hover.webp?v=2) center top no-repeat;
   background-size: cover;
 }
 #main_portfolio .pf_con .prev_img .site_hover.w14 {
